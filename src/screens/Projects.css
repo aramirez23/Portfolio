@@ -1,0 +1,17 @@
+.carousel-size {
+  width: 45%;
+  margin-left: 25%;
+}
+
+.btn-width {
+    width: 200px;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.35);
+}

@@ -1,3 +1,4 @@
+import logo from "./logo.svg";
 import { useNavigate } from "react-router-dom";
 import "./App.css";
 import profilePic from "./images/profilePic.jpg";
@@ -6,7 +7,7 @@ import reactMarket from "./images/reactMarketCover.png";
 import actionRPG from "./images/actionRPGCover.png";
 import healthPlanner from "./images/healthPlannerCover.png";
 
-function App() {
+function Home() {
   const navigate = useNavigate();
 
   return (
@@ -20,7 +21,7 @@ function App() {
       <div className="body-text text-center">
         A recent graduate in computer science with experience using Javascript,
         Node.js, and React/Redux. I want to put my skills to use towards
-        innovative web applications.
+        innovative applications.
       </div>
       <hr class="solid hr" />
       <h1 class="display-4 text-center">Projects</h1>
@@ -37,7 +38,9 @@ function App() {
               A buy, sell, and exchange site made using Flask. (Aug 2020 - Dec
               2020) (Not Real Site - For Educational Purposes Only)
             </p>
-            <button onClick={() => navigate("/sfsuTradeMart") } className="btn btn-primary">Details</button>
+            <a href="#" class="btn btn-primary">
+              Details
+            </a>
           </div>
         </div>
         <div className="card card-width text-black h-100">
@@ -52,7 +55,9 @@ function App() {
               A small e-commerce prototype using React/Redux, Docker, Redis, and
               MongoDB (May 14 - 18 2021)
             </p>
-            <button onClick={() => navigate("/reactMarket") } class="btn btn-primary">Details</button>
+            <button onClick={() => navigate("/sfsuTradeMart")} class="btn btn-primary">
+              Details
+            </button>
           </div>
         </div>
         <div className="card card-width text-black h-100">
@@ -67,7 +72,9 @@ function App() {
               Healthcare appointment management app (Not Official App - For
               Educational Purposes Only) (Aug 2021 - Dec 2021)
             </p>
-            <button onClick={() => navigate("/healthPlanner") } class="btn btn-primary">Details</button>
+            <a href="#" class="btn btn-primary">
+              Details
+            </a>
           </div>
         </div>
         <div className="card card-width text-black h-100">
@@ -78,7 +85,9 @@ function App() {
               An Action RPG with stats, a quest with two endings, and a basic
               animation system. CSC 413 Term Project (Aug 2019 - Dec 2019)
             </p>
-            <button onClick={() => navigate("/actionRPG") } class="btn btn-primary">Details</button>
+            <a href="#" class="btn btn-primary">
+              Details
+            </a>
           </div>
         </div>
       </div>
@@ -86,4 +95,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
